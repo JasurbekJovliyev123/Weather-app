@@ -61,7 +61,7 @@ const SettingsPage = () => {
       className="max-w-2xl mx-auto p-4 space-y-8"
     >
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+        <h1 className="md:text-3xl text-2xl font-bold text-gray-900 dark:text-white mb-4">
           Settings
         </h1>
         <p className="text-gray-600 dark:text-gray-400">
@@ -77,20 +77,20 @@ const SettingsPage = () => {
           className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6"
         >
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+            <div className="flex items-center space-x-2.5 md:space-x-3">
+              <div className="md:w-12 md:h-12 w-11 h-11 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Palette className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="md:text-lg text-md font-semibold text-gray-900 dark:text-white">
                   Theme
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="md:text-sm text-[12px] text-gray-600 dark:text-gray-400">
                   Choose your preferred theme
                 </p>
               </div>
             </div>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1 md:space-x-3">
               <span className="text-sm text-gray-600 dark:text-gray-400 capitalize">
                 {theme} mode
               </span>
@@ -106,14 +106,14 @@ const SettingsPage = () => {
           className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6"
         >
           <div className="flex items-center space-x-3 mb-4">
-            <div className="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-lg flex items-center justify-center">
+            <div className="md:w-12 md:h-12 w-11 h-11 bg-green-100 dark:bg-green-900/20 rounded-lg flex items-center justify-center">
               <MapPin className="w-6 h-6 text-green-600 dark:text-green-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="md:text-lg text-md font-semibold text-gray-900 dark:text-white">
                 Default City
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="md:text-sm text-[12px] text-gray-600 dark:text-gray-400">
                 Set your preferred default location
               </p>
             </div>
@@ -133,7 +133,7 @@ const SettingsPage = () => {
                 value={defaultCity}
                 onChange={(e) => setDefaultCity(e.target.value)}
                 placeholder="e.g., London, New York, Tokyo"
-                className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-[#0EA5E9] outline-none dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all"
+                className="w-full px-4 py-2.5 md:py-3 bg-gray-50 dark:bg-gray-700 border border-[#0EA5E9] outline-none dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all"
                 aria-describedby="default-city-help"
               />
               <p
@@ -149,7 +149,7 @@ const SettingsPage = () => {
               whileTap={{ scale: 0.98 }}
               onClick={handleSave}
               disabled={saveStatus === 'saving'}
-              className={`w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-800 ${
+              className={`w-full flex items-center justify-center space-x-2 px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-800 ${
                 saveStatus === 'saved'
                   ? 'bg-green-500 hover:bg-green-600 text-white'
                   : 'bg-primary hover:bg-primary-dark text-white disabled:opacity-50 disabled:cursor-not-allowed'
