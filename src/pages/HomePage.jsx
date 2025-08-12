@@ -25,6 +25,8 @@ import { storage, STORAGE_KEYS } from '../shared/lib/storage';
         }
 
         const coords = await getCurrentPosition();
+        console.log(coords);
+        
         setLocationCoords(coords);
       } catch (error) {
         setLocationError(error.message);

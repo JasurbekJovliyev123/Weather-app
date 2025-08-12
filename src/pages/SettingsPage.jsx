@@ -159,23 +159,6 @@ const SettingsPage = () => {
             </motion.button>
           </div>
         </motion.div>
-
-
-        {/* <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.3 }}
-          className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6"
-        >
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            About
-          </h3>
-          <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-            <p>Weather Forecast App v1.0</p>
-            <p>Built with React, JavaScript, and Tailwind CSS</p>
-            <p>Weather data provided by OpenWeatherMap API</p>
-          </div>
-        </motion.div> */}
       </div>
     </motion.div>
   );
