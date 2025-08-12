@@ -97,7 +97,7 @@ import { storage, STORAGE_KEYS } from '../shared/lib/storage';
       {weatherQuery.isLoading && (
         <div className="flex justify-center text-center w-full items-center py-12">
           <div className="text-center">
-            <LoadingSpinner size="lg" className="mb-4" />
+            <LoadingSpinner size="xl" className="mb-4" />
             <p className="text-gray-600 text-center dark:text-gray-400">
               Loading weather data...
             </p>
