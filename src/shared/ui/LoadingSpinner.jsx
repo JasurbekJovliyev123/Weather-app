@@ -18,7 +18,7 @@ export const LoadingSpinner = ({
       animate={{ rotate: 360 }}
       transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
     >
-      <div className="w-full h-full border-4 border-primary border-t-transparent rounded-full" />
+      <div className="w-full h-full border-[6px] border-primary border-t-transparent rounded-full" />
     </motion.div>
   );
 };

@@ -17,7 +17,10 @@ const PageWrapper = ({ children }) => (
     transition={{ duration: 0.2 }}
     className="min-h-screen bg-gray-50 dark:bg-gray-900"
   >
-    <Navigation />
+    <header>
+       <Navigation />
+    </header>
+  
     <main className="py-6">
       {children}
     </main>
@@ -32,7 +35,7 @@ function App() {
           <AnimatePresence mode="wait">
             <Suspense fallback={
               <div className="flex justify-center items-center h-screen">
-                <LoadingSpinner size="lg" />
+                <LoadingSpinner size="xl" />
               </div>
             }>
               <Routes>

@@ -19,7 +19,7 @@ export const Navigation = () => {
       animate={{ y: 0, opacity: 1 }}
       className="bg-white dark:bg-gray-800 shadow-md border-b border-gray-200 dark:border-gray-700"
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto py-1 md:py-2 px-4">
         <div className="flex justify-between items-center h-16">
           <NavLink to={'/'} className="flex items-center space-x-1 md:space-x-2">
             <Cloud className="md:w-8 md:h-8 w-6 h-6 text-primary" />

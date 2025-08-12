@@ -82,7 +82,7 @@ const ForecastPage = () => {
       {forecastQuery.isLoading && (
         <div className="flex justify-center items-center py-12">
           <div className="text-center">
-            <LoadingSpinner size="lg" className="mb-4" />
+            <LoadingSpinner size="lg" className="mb-4 ml-12" />
             <p className="text-gray-600 dark:text-gray-400">
               Loading forecast data...
             </p>
