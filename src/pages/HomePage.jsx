@@ -90,7 +90,7 @@ import { storage, STORAGE_KEYS } from '../shared/lib/storage';
           <div className="flex items-center space-x-2">
             <AlertCircle className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
             <p className="text-sm text-yellow-700 dark:text-yellow-300">
-              Location access denied. Showing weather for London as default.
+              Location access denied. Showing weather for Tashkent as default.
             </p>
           </div>
         </motion.div>
