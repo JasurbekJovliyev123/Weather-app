@@ -27,7 +27,7 @@ const ForecastPage = () => {
         const coords = await getCurrentPosition();
         setLocationCoords(coords);
       } catch {
-        setCurrentCity('London');
+        setCurrentCity('Tashkent');
       }
     };
 
