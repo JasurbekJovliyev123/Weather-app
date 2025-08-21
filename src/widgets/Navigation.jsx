@@ -11,7 +11,6 @@ export const Navigation = () => {
     { to: '/settings', icon: Settings, label: 'Settings' },
   ];
 
-  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <motion.nav 
@@ -48,11 +47,11 @@ export const Navigation = () => {
           </div>
 
           <button 
-            onClick={toggleMenu}
+            onClick={()=>setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X  className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
         
@@ -75,7 +74,7 @@ export const Navigation = () => {
                   >
                     <NavLink
                       to={to}
-                      onClick={toggleMenu}
+                      onClick={()=>setIsOpen(!isOpen)}
                       className={({ isActive }) =>
                         `flex items-center space-x-3 px-3 py-3 rounded-md text-base font-medium transition-colors ${
                           isActive
